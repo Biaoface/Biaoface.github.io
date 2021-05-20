@@ -48,7 +48,7 @@
     
     <title>
         
-            归档: 2021/3 | 
+            华为交换机自动化配置加对比 | 
         
         Biaoface&#39;Blog
     </title>
@@ -220,7 +220,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Biaoface&#39;Blog">
-    <meta name="msapplication-starturl" content="http://biaoface.github.io/archives/2021/03/">
+    <meta name="msapplication-starturl" content="http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Biaoface&#39;Blog">
@@ -235,13 +235,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://biaoface.github.io/archives/2021/03/">
+    <meta property="og:url" content="http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2021/3 | Biaoface&#39;Blog">
+    <meta property="og:title" content="华为交换机自动化配置加对比 | Biaoface&#39;Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="记录一个人成长的博客">
     
 
+    
+        <meta property="article:published_time" content="Wed Mar 17 2021 11:36:32 GMT+0800">
+        <meta property="article:modified_time" content="Wed Mar 17 2021 11:36:42 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,13 +252,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://biaoface.github.io/archives/2021/03/index.html" />
+        <link rel="canonical" href="http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html",
+    "headline": "华为交换机自动化配置加对比",
+    "datePublished": "Wed Mar 17 2021 11:36:32 GMT+0800",
+    "dateModified": "Wed Mar 17 2021 11:36:42 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Biaoface",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Biaoface&#39;Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "记录一个人成长的博客",
+}
+</script>
 
 
     
@@ -289,149 +322,440 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#NETCONF-amp-amp-DIFFLIB"><span class="post-toc-text">NETCONF &amp;&amp; DIFFLIB</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E9%A2%84%E7%BD%AE%E6%9D%A1%E4%BB%B6"><span class="post-toc-text">预置条件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#%E6%B7%BB%E5%8A%A0%E6%8E%A5%E5%8F%A3"><span class="post-toc-text">添加接口</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="post-toc-text">添加用户</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%85%AC%E9%92%A5"><span class="post-toc-text">添加公钥</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BB%A3%E7%A0%81%E9%98%B6%E6%AE%B5"><span class="post-toc-text">代码阶段</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 10 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html">华为交换机自动化配置加对比</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Biaoface's avatar">
-            </div>
-            <div>
-                <strong>Biaoface</strong>
-                <span>3月 17, 2021</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/Linux%E7%AC%94%E8%AE%B0.html">Linux笔记</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            设置IP地...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/Linux%E7%AC%94%E8%AE%B0.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Biaoface's avatar">
-            </div>
-            <div>
-                <strong>Biaoface</strong>
-                <span>3月 11, 2021</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 10 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                华为交换机自动化配置加对比
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Biaoface</strong>
+        <span>3月 17, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=华为交换机自动化配置加对比&url=http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html&pic=http://biaoface.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=华为交换机自动化配置加对比&url=http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html&via=Biaoface" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h4 id="NETCONF-amp-amp-DIFFLIB"><a href="#NETCONF-amp-amp-DIFFLIB" class="headerlink" title="NETCONF &amp;&amp; DIFFLIB"></a>NETCONF &amp;&amp; DIFFLIB</h4><h5 id="预置条件"><a href="#预置条件" class="headerlink" title="预置条件"></a>预置条件</h5><ul>
+<li>已配置SSH用户，有管理IP</li>
+<li>拓扑为终端连接任意网络设备</li>
+</ul>
+<h6 id="添加接口"><a href="#添加接口" class="headerlink" title="添加接口"></a>添加接口</h6><pre><code>&lt;HUAWEI&gt;sy
+[~HUAWEI]sy ce12800
+[*HUAWEI]int vlanif 1
+[*HUAWEI-Vlanif1]ip add 192.168.137.100 24
+[*HUAWEI-Vlanif1]int g1/0/0
+[*HUAWEI-GE1/0/0]undo shutdown 
+[*HUAWEI-GE1/0/0]port link-type access 
+[*HUAWEI-GE1/0/0]port default vlan 1
+[*HUAWEI-GE1/0/0]comm
+</code></pre>
+<h6 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h6><pre><code>[~ce12800]stelnet server enable
+[*ce12800]user-interface vty 0 4
+[*ce12800-ui-vty0-4]authentication-mode aaa    
+[*ce12800-ui-vty0-4]protocol inbound ssh
+[*ce12800-ui-vty0-4]user privilege level 3
+[*ce12800-ui-vty0-4]aaa
+[*ce12800-aaa]local-user python password irreversible-cipher Huawei    
+[*ce12800-aaa]local-user python user-group manage-ug
+[*ce12800-aaa]local-user python service-type ssh
+[*ce12800]ssh user python authentication-type rsa
+[*ce12800]ssh user python service-type stelnet
+</code></pre>
+<h6 id="添加公钥"><a href="#添加公钥" class="headerlink" title="添加公钥"></a>添加公钥</h6><pre><code>[*ce12800]rsa peer-public-key rsa01 encoding-type openssh 
+[*ce12800-rsa-public-key]public-key-code begin 
+[*ce12800-rsa-public-key-rsa-key-code]ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC92M
+dXE5GaRZHrpb7QMIGmI6G9wOqB4x1SCf8/TsxUxNuxqsSG5tyCUwgw1h2oEIDzBQt9Y+OPhW+Rt7QiKl
+LtnxJnXnCvaswOfIj16T5VhKn5ptw7OROxYN2/T2v2G3EhXl83bK6Zjq1Yjsxpg3HAgMVCDNu5dx0H0u
+F4acPxdXlcE0YUQ15IH/1mAEq40QZ3M5cXOyOSZJs6PLU28cY7StsBHlruG+zkPVIQbf/5XIsPtBml5L
+UExzeOp6yfVP79uDwkaPonkVvGlfrACB7gcPErJnzhg8AAYZO5gEz1e04mLQ3Y7iXO4SbSGUY6PRNRQa
+9fb04r18N/3iqduE4H biaoface@Biaoface
+[*ce12800-rsa-public-key-rsa-key-code]public-key-code end
+[*ce12800-rsa-public-key]peer-public-key end 
+[*ce12800]ssh user python assign rsa-key rsa01
+</code></pre>
+<h5 id="代码阶段"><a href="#代码阶段" class="headerlink" title="代码阶段"></a>代码阶段</h5><pre><code class="python"># -*- coding: utf-8 -*
+import paramiko 
+from ncclient import manager 
+from ncclient import operations 
+import time 
+import difflib 
+import re
+
+ip = &#39;192.168.137.100&#39; 
+ssh_user = &#39;python&#39;
+ssh_password = &#39;Huawei12#$&#39;
+netconf_port = &#39;830&#39;
+netconf_user = &#39;netconf&#39;
+netconf_password = &#39;Huawei12#$&#39;
+filename=&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\netconf.txt&#39;
+
+# 定义获取配置函数
+def get_config(ip, username, password):
+    ssh = paramiko.client.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect(hostname=ip, port=22, username=username, password=password)
+    cli = ssh.invoke_shell()
+    cli.send(&quot;N\n&quot;)
+    time.sleep(0.5)
+    cli.send(&#39;screen-length 0 temporary\n&#39;)
+    time.sleep(0.5)
+    cli.send(&quot;display cu\n&quot;)
+    time.sleep(2)
+    dis_cu = cli.recv(999999).decode()
+    return (dis_cu)
+    ssh.close()
+
+# 定义SSH类,使用ssh添加netconf配置所需前置条件
+# 所需配置脚本保存在本地,netconf.txt文件内容如下
+&#39;&#39;&#39;
+system-view immediately 
+aaa 
+local-user netconf password irreversible-cipher Huawei12#$ 
+local-user netconf service-type ssh 
+local-user netconf level 3 
+quit 
+ssh user netconf authentication-type password 
+ssh user netconf service-type snetconf 
+snetconf server enable 
+netconf 
+protocol inbound ssh port 830 
+comm
+quit
+&#39;&#39;&#39;
+
+class ssh():
+    def ssh_connect(ip,username,password):
+        ssh = paramiko.client.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.client.AutoAddPolicy())
+        ssh.connect(hostname=ip,port=22,username=username,password=password)
+        print(ip+&#39;SSH登陆成功，即将进入netconf预配置&#39;)
+        return ssh
+    def ssh_config(file,ip,username,password):
+        a = ssh.ssh_connect(ip,username,password)
+        cli = a.invoke_shell()
+        cli.send(&#39;sys\n&#39;)   
+        time.sleep(0.5)
+        cli.send(&#39;screen-length 0 \n&#39;)
+        time.sleep(0.5)
+        f = open(file,&#39;r&#39;)
+        config_list = f.readlines()
+        for i in config_list:
+            cli.send(i)
+            time.sleep(0.5)    
+        dis_this = cli.recv(999999).decode()
+        print (&quot;netconf预配置完成&quot;)
+        a.close()
+
+
+# 定义netconf连接函数
+def huawei_connect(host, port, user, password):
+    return manager.connect(host=host, 
+                        port=port, 
+                        username=user, 
+                        password=password, 
+                        hostkey_verify = False, 
+                        device_params=&#123;&#39;name&#39;: &quot;huawei&quot;&#125;, 
+                        allow_agent = False, 
+                        look_for_keys = False)
+
+# NETCONF 发送 XML 数据，配置设备接口 IP 地址HCIP-Datacom-Network Automation Developer 实验指导手册 第 32 页
+CREATE_INTERFACE = &#39;&#39;&#39;&lt;config&gt; 
+    &lt;ethernet xmlns=&quot;http://www.huawei.com/netconf/vrp&quot; content-version=&quot;1.0&quot; format-version=&quot;1.0&quot;&gt; 
+        &lt;ethernetIfs&gt; 
+            &lt;ethernetIf operation=&quot;merge&quot;&gt; 
+                &lt;ifName&gt;GE1/0/2&lt;/ifName&gt; 
+                &lt;l2Enable&gt;disable&lt;/l2Enable&gt;
+            &lt;/ethernetIf&gt; 
+        &lt;/ethernetIfs&gt;
+    &lt;/ethernet&gt; 
+    &lt;ifm xmlns=&quot;http://www.huawei.com/netconf/vrp&quot; content-version=&quot;1.0&quot; format-version=&quot;1.0&quot;&gt; 
+        &lt;interfaces&gt; 
+            &lt;interface operation=&quot;merge&quot;&gt; 
+                &lt;ifName&gt;GE1/0/2&lt;/ifName&gt;
+                &lt;ifDescr&gt;Config by NETCONF&lt;/ifDescr&gt; 
+                &lt;ifmAm4&gt; 
+                    &lt;am4CfgAddrs&gt; 
+                        &lt;am4CfgAddr operation=&quot;create&quot;&gt; 
+                            &lt;subnetMask&gt;255.255.255.0&lt;/subnetMask&gt; 
+                            &lt;addrType&gt;main&lt;/addrType&gt;
+                            &lt;ifIpAddr&gt;192.168.2.1&lt;/ifIpAddr&gt; 
+                        &lt;/am4CfgAddr&gt; 
+                    &lt;/am4CfgAddrs&gt;
+                &lt;/ifmAm4&gt; 
+            &lt;/interface&gt;
+        &lt;/interfaces&gt; 
+    &lt;/ifm&gt; 
+&lt;/config&gt;&#39;&#39;&#39;
+
+def read_file(filename):
+    try:
+        with open(filename,&#39;r&#39;) as f:
+            return f.readlines()
+    except IOError:
+        print(&#39;%s未找到该文件&#39;%filename)
+        sys.exit(1)
+def compare_files(file1, file2, out_file):
+    file1_content = read_file(file1)
+    file2_content = read_file(file2)
+    d = difflib.HtmlDiff()
+    result = d.make_file(file1_content,file2_content)
+    with open (r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\result.html&#39;,&quot;w&quot;) as f:
+        f.writelines(result)
+    print()
+    
+if __name__ == &quot;__main__&quot;:
+    # 获取当前配置
+    output=get_config(ip, ssh_user, ssh_password)
+    config = re.findall(r&#39;(&lt;ce12800&gt;display cu[\d\D]+&lt;ce12800&gt;$)&#39;,output)
+    with open(r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\conf1&#39;,&#39;w&#39;) as f: 
+        f.writelines(config[0])
+        print(&#39;首次获取配置成功&#39;)
+    
+    # netconf配置
+    ssh.ssh_config(filename,ip,ssh_user,ssh_password) 
+    time.sleep(1)
+    m = huawei_connect(ip,netconf_port,netconf_user,netconf_password) 
+    m.edit_config(target=&#39;running&#39;,config=CREATE_INTERFACE)
+    print(&quot;netconf配置完成，即将进入对比配置阶段&quot;) 
+
+    # 再次获取配置
+    output=get_config(ip, ssh_user, ssh_password)
+    config = re.findall(r&#39;(&lt;ce12800&gt;display cu[\d\D]+&lt;ce12800&gt;$)&#39;,output)
+    with open(r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\conf2&#39;,&#39;w&#39;) as f: 
+        f.writelines(config[0])
+        print(&#39;二次获取配置成功&#39;)
+
+    # 对比配置
+    compare_files(r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\conf1&#39;,r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\conf2&#39;, r&#39;D:\\OneDrive\\5.code\\mygithub\\DATACOM\\综合实验\\result.html&#39;)
+    print(&quot;配置对比完成&quot;)
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://biaoface.github.io/%E5%8D%8E%E4%B8%BA%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E9%85%8D%E7%BD%AE%E5%8A%A0%E5%AF%B9%E6%AF%94.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/%E6%A0%91%E8%8E%93%E6%B4%BE4b.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/Linux%E7%AC%94%E8%AE%B0.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
